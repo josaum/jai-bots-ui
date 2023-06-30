@@ -1,0 +1,31 @@
+.aiWorkerCard {
+  @apply flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-md;
+}
+
+.aiWorkerCard__title {
+  @apply text-xl font-semibold mb-2;
+}
+
+.aiWorkerCard__description {
+  @apply text-gray-600 text-sm mb-4;
+}
+
+.aiWorkerCard__skills {
+  @apply flex flex-wrap justify-center mb-4;
+}
+
+.aiWorkerCard__skill {
+  @apply bg-blue-500 text-white px-2 py-1 rounded-full text-xs mr-2 mb-2;
+}
+
+.aiWorkerCard__integrations {
+  @apply flex flex-wrap justify-center mb-4;
+}
+
+.aiWorkerCard__integration {
+  @apply bg-green-500 text-white px-2 py-1 rounded-full text-xs mr-2 mb-2;
+}
+
+.aiWorkerCard__basePrompt {
+  @apply text-gray-600 text-sm;
+}

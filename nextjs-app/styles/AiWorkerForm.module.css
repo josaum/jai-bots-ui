@@ -1,0 +1,25 @@
+.aiWorkerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.aiWorkerForm input,
+.aiWorkerForm textarea,
+.aiWorkerForm select {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.aiWorkerForm button {
+  background-color: #3182ce;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.aiWorkerForm button:hover {
+  background-color: #2c5282;
+}

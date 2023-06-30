@@ -1,0 +1,27 @@
+As an AI, I'm unable to create a parquet file directly. However, I can provide you with a Python script that you can run locally to generate a parquet file with the required schema. Here's the Python script:
+
+```python
+import pandas as pd
+import pyarrow as pa
+import pyarrow.parquet as pq
+
+# Define the data
+data = {
+    'Name': ['Data Entry Analyst', 'AI Developer', 'Machine Learning Engineer'],
+    'Description': ['Handles data entry tasks', 'Develops AI models', 'Builds and trains ML models'],
+    'Skills': ['Data Entry, Excel', 'Python, TensorFlow', 'Python, PyTorch'],
+    'Integrations': ['Google Sheets, Excel', 'TensorFlow, Keras', 'PyTorch, Scikit-learn'],
+    'Base Prompt': ['Enter data into the system', 'Develop an AI model', 'Train a machine learning model']
+}
+
+# Create a pandas DataFrame
+df = pd.DataFrame(data)
+
+# Convert the DataFrame to an Arrow Table
+table = pa.Table.from_pandas(df)
+
+# Write the Table to a Parquet file
+pq.write_table(table, 'nextjs-app/public/ai-workers.parquet')
+```
+
+You can run this script using Python. It will create a parquet file named `ai-workers.parquet` in the `nextjs-app/public` directory. The parquet file will contain the AI Workers data.
